@@ -1,6 +1,6 @@
 import { Host, Props, c } from "atomico";
 
-function brand({ color, width }: Props<typeof brand>): Host<{
+function testNpm({ color, width }: Props<typeof testNpm>): Host<{
   onChange: CustomEvent<number>;
 }> {
   return (
@@ -15,7 +15,7 @@ function brand({ color, width }: Props<typeof brand>): Host<{
   );
 }
 
-brand.props = {
+testNpm.props = {
   color: {
     type: String,
     value: "#232323",
@@ -26,6 +26,6 @@ brand.props = {
   },
 };
 
-export const Brand = c(brand);
+export const TestNpm = c(testNpm);
 
-customElements.define("atomico-brand", Brand);
+customElements.define("test-npm-juoyokeifq", TestNpm);
