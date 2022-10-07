@@ -11,7 +11,6 @@
     "src/*"
   ],
   "version": "0.0.0",
-  "private": true,
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -32,5 +31,26 @@
     "@atomico/vite": "^2.0.0",
     "typescript": "^4.8.4",
     "vite": "latest"
+  },
+  "module": "./dist/index.js",
+  "exports": {
+    "./index": "./dist/index.js",
+    ".": "./dist/index.js",
+    "./react": "./dist/index.react.js",
+    "./preact": "./dist/index.preact.js"
+  },
+  "types": "types/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "index": [
+        "./types/index.d.ts"
+      ],
+      "react": [
+        "./types/index.react.d.ts"
+      ],
+      "preact": [
+        "./types/index.preact.d.ts"
+      ]
+    }
   }
 }

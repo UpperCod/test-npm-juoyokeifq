@@ -1,0 +1,1 @@
+export const TestNpm: import("@atomico/react/types/core/create-wrapper").Component<typeof import("test-npm-juoyokeifq/index").TestNpm>
