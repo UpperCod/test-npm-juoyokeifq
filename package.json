@@ -1,0 +1,36 @@
+{
+  "name": "test-npm-juoyokeifq",
+  "description": "a repo to start with atomico",
+  "meta": {
+    "id": "vite",
+    "title": "Started - Atomico + Vite(JS,JSX,TS,TSX)",
+    "description": "Hassle-free starter template, perfect for starting with Atomico",
+    "branch": "https://github.com/atomicojs/atomico/tree/2-started/"
+  },
+  "workspaces": [
+    "src/*"
+  ],
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "create:component": "scaff component-tsx src",
+    "exports": "exports src/index.tsx --exports --types --analyzer",
+    "prepublishOnly": "npm run exports"
+  },
+  "dependencies": {
+    "@atomico/exports": "^0.37.0",
+    "@atomico/hooks": "^3.47.0",
+    "@atomico/react": "^2.6.0",
+    "atomico": "latest"
+  },
+  "devDependencies": {
+    "@atomico/scaffold": "^0.4.0",
+    "@atomico/tsconfig": "^1.0.0",
+    "@atomico/vite": "^2.0.0",
+    "typescript": "^4.8.4",
+    "vite": "latest"
+  }
+}
